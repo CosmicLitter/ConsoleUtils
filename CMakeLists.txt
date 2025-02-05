@@ -19,12 +19,6 @@ if (BUILD_TESTS)
   add_subdirectory(tests)
 endif()
 
-add_executable(main src/main.cpp)
+# add_executable(main src/main.cpp)
 
-# install (TARGETS console_utils
-#   ARCHIVE DESTINATION lib
-#   LIBRARY DESTINATION lib
-#   RUNTIME DESTINATION bin
-# )
-#
-# install(DIRECTORY include/ DESTINATION include)
+

@@ -3,7 +3,7 @@ add_library(ConsoleUtils STATIC
   # spinner.cpp
 )
 
-target_include_directories(console_utils PUBLIC
+target_include_directories(ConsoleUtils PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../include>
   $<INSTALL_INTERFACE:include>
 )
