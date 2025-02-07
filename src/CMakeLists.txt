@@ -1,9 +1,8 @@
-add_library(ConsoleUtils STATIC
-  colors.cpp
+add_library(ConsoleUtils INTERFACE
   # spinner.cpp
 )
 
-target_include_directories(ConsoleUtils PUBLIC
+target_include_directories(ConsoleUtils INTERFACE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../include>
   $<INSTALL_INTERFACE:include>
 )

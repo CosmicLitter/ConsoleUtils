@@ -19,6 +19,6 @@ if (BUILD_TESTS)
   add_subdirectory(tests)
 endif()
 
-# add_executable(main src/main.cpp)
+add_executable(main src/main.cpp)
 
-
+target_link_libraries(main PUBLIC ConsoleUtils)
