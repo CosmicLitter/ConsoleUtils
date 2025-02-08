@@ -10,15 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(src)
 
-# target_include_directories(console_utils PUBLIC
-#   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-# )
-
 if (BUILD_TESTS)
   enable_testing()
   add_subdirectory(tests)
 endif()
-
-add_executable(main src/main.cpp)
-
-target_link_libraries(main PUBLIC ConsoleUtils)

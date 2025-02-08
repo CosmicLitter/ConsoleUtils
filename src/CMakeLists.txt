@@ -1,8 +1,7 @@
-add_library(ConsoleUtils INTERFACE
-  # spinner.cpp
+add_library(ConsoleUtils time.cpp
 )
 
-target_include_directories(ConsoleUtils INTERFACE
+target_include_directories(ConsoleUtils PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../include>
   $<INSTALL_INTERFACE:include>
 )
