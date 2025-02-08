@@ -2,7 +2,6 @@
 #include <console_utils/time.hpp>
 #include <ctime>
 #include <string>
-#include <iostream>
 
 namespace ConsoleUtils::Time {
 
@@ -12,8 +11,6 @@ std::string getCurrentTimestamp(const std::string &format) {
 
   std::tm local_tm;
   localtime_r(&now_time_t, &local_tm);
-
-  std::cout << now_time_t << std::endl;
 
   char buffer[100];
   if (std::strftime(buffer, sizeof(buffer), format.c_str(), &local_tm)) {
